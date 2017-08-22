@@ -1,0 +1,27 @@
+body {
+	background-color: #2FCD85;
+	margin: 0;
+}
+
+.container {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.box {
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	background-color: white;
+}
+
+.box-border {
+	border: 1px solid #c5c5c5;		
+	-webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	-moz-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
