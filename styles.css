@@ -10,10 +10,12 @@ body {
 }
 
 .box {
-	width: 600px;
-	height: 400px;
+	width: 570px;
+	height: 370px;
 	margin: auto;
 	background-color: white;
+	display: flex;
+	flex-direction: row;
 }
 
 .box-border {
@@ -24,4 +26,102 @@ body {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	padding: 15px;
 }
+
+.col-6 {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	max-width: 285px;
+}
+
+.close {
+	align-self: flex-end;
+	background: none;
+	border: none;
+	font-size: 20px;
+	color: #929292;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid grey;
+	width: 100%;
+	margin-top: 20px;
+	outline: none;
+	color: lightgray;
+}
+
+.sign-form > input:focus {
+	-webkit-animation-name: inputFocus;
+	-webkit-animation-duration: 2s;
+	animation-name: inputFocus;
+	animation-duration: 2s;
+	border-bottom: 2px solid blue;
+}
+
+.sign {
+	font-size: 46px;
+	margin: 0px;
+}
+
+.sign-form {
+	height: 250px;
+}
+
+.btn-password {
+	background: none;
+	border: none;
+	align-content: center;
+	float: right;
+	font-size: 10px;
+}
+
+.left {
+	justify-content: initial;
+}
+
+.sign-area {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 2;
+	justify-content: center;
+}
+
+.next {
+	align-self: center;
+	padding: 20px;
+	width: 190px;
+	background-color: #3554D1;
+	color: white;
+	border-radius: 50px;
+	border: none;
+	font-size: 22px;
+}
+
+.self-center {
+	align-self: center;
+}	
+
+.txt-sm {
+	font-size: 11px;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes inputFocus {
+	from   {border-bottom:2px solid blueviolet;}
+	to  {border-bottom:2px solid blue;}
+}
+
+/* Standard syntax */
+@keyframes inputFocus {
+	from   {border-bottom:2px solid blueviolet;}
+	to  {border-bottom:2px solid blue;}
+	
+}
+
+
+
