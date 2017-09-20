@@ -7,21 +7,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet">
 </head>
 
 <body>
 	<div class="container">
-
+		<span class="error center font-text">Campos Obrigatórios não preenchidos</span>
+		<span class="success center font-text">Cadastro Realizado com sucesso! Obrigado</span>
+		<span class="no-match center font-text">Senhas informadas não são iguais, por favor verifique!</span>
 		<div class="box box-border">
-			<div class="col-6">
-				<h1 class="sign">Sign Up</h1>
+			<div class="col-6 ml">
+				<h1 class="sign">Sign up</h1>
 				<div class="sign-form">
-					<input type="text" name="fullName" value="">
-					<input type="email" name="email" value="">
-					<input type="password" name="" value="">
-					<button class="btn-password" type="">show pass word</button>
-					<input type="passwrod" name="" value="">
-					<button class="btn-password" type="">show pass word</button>
+					<form id="signForm">
+						<input type="text" placeholder="Name" name="fullName" value="">
+						<input type="email" placeholder="email@elevential.com" name="email" value="">
+						<input class="password" placeholder="Password" type="password" name="" value="">
+						<button class="btn-password" type="button">Show Password</button>
+						<input class="password" placeholder="Confirm password" type="password" style="margin-top:10px;" name="" value="">
+						<button class="btn-password" type="button">Show Password</button>
+					</form>
 				</div>
 
 			</div>
@@ -29,7 +34,7 @@
 			<div class="col-6 left">
 				<button class="close" type="">X</button>
 				<div class="sign-area">
-					<button class="next self-center" type="">Next &#8594;</button>
+					<button class="next self-center" type="submit">Next &#8594;</button>
 					<span class="self-center txt-sm">Already have an account? <a href="https://www.elevential.com/">Log in.</a></span>
 				</div>
 			</div>
