@@ -1,6 +1,4 @@
 # Desafio Elevential
-# elevential
-
 
 ## 1.O que você achou do desafio? 
   Bastante simples para um tempo relativamente extenso (3 dias).
